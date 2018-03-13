@@ -1,0 +1,102 @@
+@import url(fl-great-icon-set.css);
+/*==================     Subscribe Form     ======================*/
+.subscribe-form {
+  position: relative;
+  display: block; }
+  .subscribe-form label {
+    display: inline-block;
+    position: relative;
+    padding: 12px 10px 12px;
+    background: transpered;
+    border: 1px solid #f9f9f9;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .subscribe-form label.name {
+    width: 100%; }
+  .subscribe-form label.email {
+    width: 100%; }
+  .subscribe-form input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    vertical-align: baseline;
+    box-shadow: none;
+    color: #f9f9f9;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    height: 22px; }
+  .subscribe-form .fl {
+    position: relative; }
+    .subscribe-form .fl.fl-great-icon-set-new99:before {
+      position: absolute;
+      font-size: 30px;
+      -moz-transition: 0.3s ease all;
+      -o-transition: 0.3s ease all;
+      -webkit-transition: 0.3s ease all;
+      transition: 0.3s ease all;
+      top: 0;
+      right: -47px;
+      padding: 14px 10px 14px 8px;
+      background: #212121; }
+    .subscribe-form .fl.fl-great-icon-set-new99:hover:before {
+      color: #f7ab07; }
+  .subscribe-form a[data-type="submit"] {
+    text-transform: uppercase;
+    font-weight: 900;
+    display: inline-block;
+    padding: 14px 22px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF; }
+    .lt-ie9 .subscribe-form a[data-type="submit"] {
+      background: none;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#33FFFFFF', endColorstr='#33FFFFFF')";
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');
+      zoom: 1; }
+    .subscribe-form a[data-type="submit"]:hover {
+      background: #f7ab07; }
+
+.subscribe-form .error, .subscribe-form .success {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -10px;
+  text-align: left;
+  padding: 4px 10px;
+  left: 5px;
+  right: 5px;
+  font-size: 10px;
+  line-height: 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff; }
+.subscribe-form .error {
+  display: none;
+  color: #f00;
+  overflow: hidden;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
+.subscribe-form label.invalid .error {
+  display: block; }
+.subscribe-form .success {
+  display: none;
+  color: #0f0; }
+
+@media (max-width: 979px) {
+  .subscribe-form label.name,
+  .subscribe-form label.email {
+    display: block;
+    width: 100%; }
+  .subscribe-form * + label,
+  .subscribe-form * + a[data-type='submit'] {
+    margin-top: 10px; } }
