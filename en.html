@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>Moscow knot 2018</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/subscribe-form.css"/>
     <link rel="stylesheet" href="css/google-map.css"/>
+    <link rel="stylesheet" href="css/modal-video.min.css"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
     <script language="Javascript" type="text/javascript" src="assets/js/jquery.lwtCountdown-1.0.js"></script>
 	<script language="Javascript" type="text/javascript" src="assets/js/misc.js"></script>
+	<script language="Javascript" type="text/javascript" src="/js/readmore.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="/js/modal-video.js"></script>
 
     <!--[if lt IE 9]>
     <html class="lt-ie9">
@@ -30,11 +35,60 @@
     <script src='js/device.min.js'></script>
 </head>
 <body>
+		  <style>
+		  .rred {
+		      color: #ff0408;
+    font-size: 30px;
+    font-variant: all-petite-caps;
+    font-weight: bold;}
+		  .blur {
+	  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.8);
+  text-align:justify;
+}
+.perf {
+	  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.8);
+  padding:10px;
+}
+		  .blur2 {
+	  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.8);
+  text-align:left;
+  padding:10px;
+}
+.stalinist {    font-family: 'Stalinist One', cursive;
+
+    line-height: 0.65em;
+    color: #ff0408;
+	    font-size: 6em;}
+	
+
+@media (max-width: 1199px){
+	.stalinist { 
+    font-size: 6em;
+}
+	@media (max-width: 479px) {
+	.stalinist {    font-size: 3em;}
+	}
+
+	}
+	
+			   .performers img {
+		   width:100px;
+		   heigh:100px;
+		   float:left;
+		   clear: both;
+		   border-radius: 50%;}
+		    .performers h4,p{margin:0px;}
+			.performers div {margin-top:30px;}
+		  </style>
+
 <div class="page">
     <!--========================================================
                               HEADER
     =========================================================-->
-    <header>
+     <header>
 
         <div class="container">
             <div class="brand">
@@ -46,8 +100,8 @@
 
             <div class="row"><div style="float:left;">
   
- <span>tickets:</br> 1 day:2000 &#8381;</br>3 days:5000 &#8381;</span></div>
-<div style="float:left;"><a  href="#" class="btn fl fl-great-icon-set-wallet32" style="margin-left: 10px;color: #ff0408;font-size: 30px;" >Buy</a></div>
+ <span>tickets:</br> 1 day:1800 &#8381;</br>3 days:4500 &#8381;</span></div>
+<div style="float:left;"><a  href="#tickets" class="btn fl fl-great-icon-set-wallet32" style="margin-left: 10px;color: #ff0408;font-size: 30px;" >Buy</a></div>
 
 			</div> 
             
@@ -58,7 +112,7 @@
                               CONTENT
     =========================================================-->
     <main>
-          <section class="well  bg-secondary" >
+           <section class="well  bg-secondary" >
             <div class="container">
                 <div class="row">
                     <div class="grid_6">
@@ -83,6 +137,9 @@ and models, who have never performed in Moscow before.
                             <div class="grid_3">
                                 <p>If you are interested in making a show or giving a workshop, please contact us at Moscowknot@gmail.com.
 								</p>
+								<p> Organizers: <a href="https://vk.com/vladaved"><i class="fa fa-vk"></i> Vlada</a>, 
+							 <a href="https://vk.com/falco_alex"><i class="fa fa-vk"></i> Falco</a>,
+							 <a href="#">Torquemada</a> </p>
                             </div>
                         </div>
                     </div>
@@ -116,24 +173,314 @@ Large theatre / club. Up to 1500 people</br>
                 <h2 class="wow fadeIn" data-wow-duration="1s">about</h2>
             </div>
         </section>
+	       <section class="well bg-secondary2">
+
+            <div class="container performers">
+                <h3>Performers </h3>
+
+                <div class="row">
+                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.4s">
+						<img src="/images/p2018/aveger.jpg"/>
+                        <h4><a href="#"> Jaeger </a></h4>
+						<p>Russia. Moscow</p>
+                        <p class="perf">
+						</p>
+                     
+                   </div>
+                   <div class="grid_4 wow fadeInLeft " >
+						<img src="/images/p2018/avvital.jpg"/>
+						<h4><a href="#"> Vital Khimia </a></h4>
+						<p>Costa Rica</p>
+					
+						<p class="perf"> </p>
+						
+                    </div>
+                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.2s">
+						<img src="/images/p2018/avmedved.jpg"/>
+                        <h4><a href="#"> Medved</a></h4>
+						<p>Russia. Moscow</p>
+                        <p class="perf">
+</p>
+
+                  </div>
+                   <div class="grid_4 wow fadeInLeft" >
+						<img src="/images/p2018/avkrash.jpg"/>
+                        <h4><a href="#">Krash</a></h4>
+						<p>Russia. Moscow</p>
+						<p  class="perf">Krash is a follower, first of all, of Russian bondage masters. Thanks to them and in search of inspiration, he began to form his own style. In it the rope work is always supplemented by various facilities, as well as close interaction with the partner through the grips, kicks and other delights of hard contact, various devices. 
+With Lorilynn they form a pair, combining the warmth of youth and the experience of prolonged interaction with each other, which allows them to immerse themselves in experiments and use non-standard scenarios. They used to make ropesessions in the chamberlike setting, so that's why they consider the performance at Moscow Knot as a new unique experience. 
+"My bondage is not static art, not an installation for photography. It's a close interaction, dynamics, pain and passion. When I bound a woman, I want to see her transformation from the crown of evolution to a naked creature, sincerely wishing to survive. I like to observe the crystallization of basic needs, the oblivion of the masks imposed during life. The rope is one of the most effective tools for this change. "						
+</p>
+                    </div>
+                    <div class="grid_4 wow fadeInLeft" data-wow-delay="0.4s" >
+						<img  src="/images/p2018/avwillins.jpg"/>
+                        <h4><a href="#">Valeria Villins</a></h4>
+						<p>Russia. St. Petersburg</p>
+						<p class="perf">
+						</p>
+						
+                   </div>
+                   <div class="grid_4 wow fadeInLeft " >
+						<img src="/images/p2018/avgeorg.jpg"/>
+						<h4><a href="#"> Георг</a></h4>
+						<p>Russia. Moscow</p>
+                      <p class="perf">
+					  </p>
+
+                    </div>
+                   <div class="grid_4 wow fadeInLeft " data-wow-delay="0.4s" >
+						<img src="/images/p2018/avodin.jpg"/>
+                        <h4><a href="#"> Odin</a></h4>
+						<p>Izrael. Tel-Aviv</p>
+						<p class="perf">In 2014 there was my first time I got into the world of ropes. At that moment I wished for something new, unexplored.
+Suddenly I dived into such a phenomenon as bondage. I watched Akira Naka and Randa May’s videos and understood clearer that I desired to experience these emotions myself, which had the masters during their sessions. More over I was eager to learn how to give such bright emotions to my partner.
+I studied tying by trial and error, gradually realizing that ropes are able to give you great power. Besides I intended to discover every knot by my mind and to feel it by my heart. 
+In my opinion bondage is one of the ways to communicate with a woman. Ropes can make something that words can’t do, and you don’t always need words.
+We have a proverb: there is no limit of perfection. I am sure it refers to bondage too: there are no bounds of developing, there is always something to learn.
+</p>
+                   </div>
+<!--                 <div class="grid_4 wow fadeInLeft " data-wow-delay="0.4s" >
+						<img src="/images/p2018/avlibido.jpg"/>
+						<h4><a href="#"> Либидо</a></h4></a>
+						<p>Россия. Москва  </p>
+						<p class="perf">
+</p>
+                       </div>
+  -->
+  <div class="grid_4 wow fadeInLeft " >
+						<img src="/images/p2018/avmirble.jpg"/>
+                        <h4><a href="#"> Alexander Mirble </a></h4>
+						<p>Russia. Kazan</p>
+                        <p class="perf">Alexander Mirble & Malena Gatto</br>
+A bright young couple from the capital of sunny Tatarstan. Started practicing bondage in 2015. Performed at various kink events in Kazan, Izhevsk, Perm, Samara. Formed in Kazan shibari club "Garasat", which united the beginners and experienced riggers of the city.
+</br>
+Bondage for us is first and foremost a pleasure. Public performances, private sessions, various photo projects - all this gives us inspiration, joy and a sense of fullness of life.
+						</p>
+                   </div>
+                   <div class="grid_4 wow fadeInLeft " data-wow-delay="0.4s" >
+						<img src="/images/p2018/avdocvale.jpg"/>
+						<h4><a class="fa fa-vk" href="https://vk.com/id197599188"> Docvale</a></h4>
+						<p>France. Paris</p>
+						<p class="perf">Docvale is a French rigger who got interrested in ropes from the BDSM world since 2007. In 2011 he met Tyka and they started ropes together influenced by Kinoko Hajime and Wildties styles. 
+In 2012, he became friend will Wildties and around one year later, they started to work together very regularly in Paris. At the same time, Tyka and him began to be call for workshops and performences in Europe. 
+</br>
+The psychological aspect of ropes became increasingly important in the way he tied and it is at this precise moment that he discovered Akira Naka’s semenawa. This intense and psychological style of bondage highlighted Docvale’s own BDSM’s expectations and confirmed his dedication to it. He became one of the very first riggers to tie in this style.
+</br>
+In the continuation of their first meeting with Akira Naka in Rome in July 2015, Tyka and Docvale made a trip to Japan in March 2016 in order to meet with the style's sensei. The purpose of the trip is to compare their work with the opinion of the latter. 
+Since then and on recommendation of Naka Akira and Wildties, he began to work on his own style. After one year and a half trying to understand which way to follow , Docvale finally started to realise in May 2017 what his own kinbaku was. Since this moment began a new way in which you must certainly perceive old school influences.  
+</p>
+     
+                    </div>
+                  <div class="grid_4 wow fadeInLeft " >
+						<img src="/images/p2018/avedna.jpg"/>
+                        <h4><a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100012925399142"> Edna </a></h4>
+						<p>Сzech republic</p>
+                       <p class="perf"> Edna tied her first knots in 2011 and since then she developed her very own style of tying. She learned how to tie from many excellent riggers (including Gorgone, Riccardo Wildties, Yoroi Nicolas and many others) and likes to combine traditional shibari techniques with nonorthodox ways of tying. When she ties she often challenges her models with difficult ties and mixes beauty of human body with expressions of pain. Edna focuses on honest emotions shared with her partner, on mutual trust and respect and she likes to use rope as a tool of intimate communication. The audience can see that she and her partner are sharing very deep emotions when they tie on stage. Edna performs and teach at international shibari events around Europe.
+					   </p>						
+                   </div>
+                   <div class="grid_4 wow fadeInLeft " data-wow-delay="0.4s" >
+						<img src="/images/p2018/avkerol.jpg"/>
+						<h4><a href="#"> Karol </a></h4>
+						<p>Russia. St. Petersburg</p>
+                        <p class="perf">
+						Karol – I became interested in bondage in 2011. I have learnt much by watching others do it and by feeling the bondage on my own body.Starting from 2012 I have begun to attend seminars and masterclasses by various European (La quarta corda, GeorgBarkas,Maestro BD, Nawasabi, Andrea Ropes, Yoroi Nicolas, Riccardo Wildties....) and Japanese bondage masters (NakaAkira, Kinoko, Kazami Ranki, Bingo Shigonava, Otonawa, Randa Mai ...). I have performed at the international bondage festival on stage at Boundcon (Munich), RopeFest (St. Petersburg), MoscowKnot (Moscow).
+						</br>
+I mostly work with women, because I can feel them like myself. A man is like a closed alien world for me. My style is to tie in close contact and in a very sensual way. I like when my partner attains pleasure through pain. Renata and I have met in summer of 2016, and our interaction has created a bond between our souls and has not left those around us indifferent to it. For me Renata is like a surge of a huge roaring river with turbulent and daring rifts andpeaceful and quiet pools.I never stop wanting to have this girl in my ropes. Our souls are tied, and we sound in unison when there is a rope between us. 
+</br>
+Renata – shibari is sex for me. This has always been so. I love pain, it arouses me, but with each master it is different. When I have met Karol, I saw yet another side of this magical practice. With her I have learnt that ropes can be something like magic, meditation, sex. She touched my hand, and I felt as if on fire. This is how the connection began. Her energy flowed like honey through my whole body…
+
+						</p>						</div>
+                   <div class="grid_4 wow fadeInLeft " >
+						<img src="/images/p2018/avrenyagami.jpg"/>
+                        <h4><a href="#"> Ren Yagami </a></h4>
+						<p>Japan</p>
+						<p class="perf"> 						
+						</p>
+                   </div>
+                 <div class="grid_4 wow fadeInLeft " >
+						<img src="/images/p2018/avlisitsin.jpg"/>
+                        <h4><a href="#"> Sergey Lisitsin </a></h4>
+						<p>Russia. St. Petersburg</p>
+						<p class="perf"> 
+						
+						</p>
+</div>
+                   <div class="grid_4 wow fadeInLeft " data-wow-delay="0.4s" >
+						<img src="/images/p2018/avropemarks.jpg"/>
+						<h4><a href="#"> RopeMarks</a></h4>
+						<p>Нидерланды.Амстердам</p>
+						<p class="perf">RopeMarks, Bob Roos, is a kinbaku professional from Amsterdam, the Netherlands. 
+</br>
+He is famous for his energetic performances in Japanese rope bondage in which he combines traditional kinbaku with his own distinct and unique style, often at incredible speed. With RopeMarks on stage, you will for sure be entertained by dynamic suspensions, a touch of torture and a sense of humour. 
+</br>
+He is passionate about sharing his knowledge about kinbaku and shibari in fun and hands on workshops. In special Masterclasses, he gives enthusiastic rope lovers the understanding that is needed to develop their own styles based on a firm foundation. 
+</br>
+Over his career RopeMarks (绳之痕) studied under the lineage of the late Akechi Denki (明智伝鬼) and Nureki Chimou (濡木痴夢男), his work reflects the traditional techniques taught by these leading kinbakushi’s. With over 20 years of experience RopeMarks is considered a kinbakushi in his own right within the worldwide Japanese rope bondage scene. 
+</br>
+www RopeMarks.com 
+Shows RopeMarks.com/shows 
+Ryu RopeMarksRyu.com 
+Body of work RopeMarks.com/portfolio 
+@ bob@ropemarks.com 
+
+</br>
+Bio of the model 
+ </br>
+Spring is an enthusiastic Dutch rope bunny and part time fetish and nude model, who loves intensity in every possible way. 
+</br>
+Already at a young age Spring had kinky and BDSM fantasies that she didn’t explore until 2011. Rope fascinated her from the beginning and after her first experience she was hooked. She started experimenting with rope and BDSM in her private life and gradually moved towards experimenting and modeling in front of the the camera, satisfying her exhibisionistic streak. She considers modeling on stage as an exciting next step. 
+</br>
+
+As a rope bunny, Spring loves being seriously challenged. She experiences (slow) suffering as a sexy and sensual way to a deeper connection in which she can totally surrender. Apart from the physical interaction, she loves the impact of nonverbal communication.
+						</p>
+
+                    </div>
+                   <div class="grid_4 wow fadeInLeft " >
+						<img src="/images/p2018/avropemotion.jpg"/>
+                        <h4><a href="#"> RopEmotion </a></h4>
+						<p>Germany</p>
+						<p class="perf">
+RopEmotion is a bondage artistbased in Germany; NorthRhine-Westfalia; Muensterland,there he has a small studiofor giving workshops but he’salso often on tour in Germanyand international for diﬀerentbondage shows, workshops andshootings.The style to tie up he usesreﬂects his own fascination,which is made up of visualform, psychology, eroticismand most important humancommunication and emotions.For him, bondage is a languagethat came along without wordsand consists of emotions,feelings, communication andmovement – Two people, goingtogether on a journey, exploringand entering new, maybeunexpected, levels.His work has already been shownin various media for example:“Schlagzeilen”, “Tattoo Erotica”and the short flm “Disturb, donot discuss“ (https://vimeo.com/132754623).RopeEmotion studies Shibarisince 2010, during the lasteight years; he visited variousnational and internationalriggers, at various workshops,mini-workshops atconventions, as well as PrivateTuitions. The riggers he visitedwhere among others, OsadaSteve, RopeKnight, Wildties,Gorgone, Mosafr, Gestalta,Vinciens, Andrea Ropes, NicolasYoroi and La Quarta Corda.All these diﬀerent styles andinﬂuences have shaped himvery much and he uses thisto create his own uniquebondage.
+						</p>
+                   </div>
+                   <div class="grid_4 wow fadeInLeft " data-wow-delay="0.4s" >
+						<img src="/images/p2018/avvlada.jpg"/>
+						<h4><a href="#"> Влада и Фалько</a></h4>
+						<p>Russia.Moscow</p>
+                        <p class="perf"> Vlada and Falco are organizers of MoscowKnot and Bondage Time events in Moscow.
+</br>
+						This incredibly creative and productive alliance was formed more than seven years ago. Vlada practices rope bondage, flagellation and a variety of BD-practices. Falco is her partner who prefers extreme bondage. Their views on bondage, as a type of torture, surprisingly coincided, giving rise to a unique style - sensual, expressive, probing the limits of human capabilities. Vlada said in an interview that bondage is a significant, very important part of their life, the process often is more interesting to me than the result. Usually goal of my action not only the tied body itself but the process of bondage, so infinite and exotic as growing bonsai.
+</br>
+						Since 2011, Vlad and Falco regularly participate in a variety of bondage events. Their performances were seen in several cities of Russia, as well as in Ukraine, the Czech Republic, Germany, France, Switzerland, Israel, Britain, Italy, Japan and Taiwan. Obsession of travelling connected with passion of photography. Many people have seen pictures of Falco, tied among the sights of the world capitals. Each trip of this couple is a creative act, in which not only the tied body, but also the usual objects of the city space are rethought.
+</p>
+                    </div>					
+					
+					</div>
+                <h2 class="wow fadeIn stalinist" data-wow-duration="1s">shows</h2>
+            </div>
+        </section>
+        <section class="well bg-secondary3">
+            <div class="container">
+                <h3>Workshops  </h3>
+
+                <div class="row">
+                    <div class="grid_3 wow fadeInRight" >
+                        <h4 class="primary-color">Docvale </h4>
+                        <p class="perf">
+Тема:Садистский кинбаку без грудной обвязки. </br>
+Дукивэль практикует стиль, в котором присутствует грудная обвязка практически во всех сессиях. Отходя от привычных методик, мы будем изучать некоторые типы подвесов (или частичных подвесов), избегая грудной обвязки. Мы можем вообразить, что данный способ легче или безопаснее, чем при использовании грудной обвязки. Однако, на семинаре мы сможем убедиться, насколько этот вид бондажа может быть болезненным и вызывающим стресс. Необходимые условия: опытное владение базовыми техниками кинбаку (узлы, закрепление, ослабление обвязки, техники сингл колам тай и дабл колам тай) и уверенное владение техникой подвесов.</br> Данный семинар не предназначен для новичков.</br>  При себе иметь: минимум 8-10 единиц джутовой веревки, диаметром 5-6 мм, длинной 7-8 метров.</p>
+</DIV>
+                    <div class="grid_3 wow fadeInRight " data-wow-delay="0.2s">
+                        <h4 class="primary-color">RopeMarks </h4>
+                        <p class="perf">During this day we will teach three masterclasses. During each masterclass there will be a focus on speed of tying, the hishi (diamond shape) pattern and on providing an in-depth understanding of why we are doing things in a particular way, with detailed information for the rigger and the bunny.
+</br>
+
+First we tackle a two rope gote, explain the different styles, their pros and cons. Talk about the third rope, aesthetics, placement and more and then add two RopeMarks three-rope-pattern gotes to your rope-toolbox; more if time permits.
+
+</br>
+Second we will us an utusubuse zuri to talk suspension, suspension safety, the different nawa zuri attachments and more. We will transition the utsubuse zuri into a sakasa zuri and use this position to go into tying with a suspended partner. Before this suspension masterclass we might take a moment and explore a hishi-futomomo that can be used during the tying of a suspended partner.
+</br>
+
+Finally we will end the day with armbinders and strappado play. After this masterclass you, as a rigger, will be able to put any rope-bunny in an armbinder and play with a strappado, no matter the bunny's body type and/or flexibility.
+</br>
+
+Class type: masterclass, duration: 4h
+</br>
+
+Pre-requisites</br>
+•	Healthy mind, body and soul,</br>
+•	Being able to tie a two-rope gote,</br>
+•	Experience with full body suspension is a pre,</br>
+•	Experience with transitions is a pre,</br>
+•	An enthusiastic, curious and open mindset.</br>
+</br>
+
+More information: </br><a href="http://www.RopeMarks.com">RopeMarks.com</a> <a href="http://www.RopeMarksRyu.com">RopeMarksRyu.com</a></br><a href="http://www.RopeMarksRyu.com/glossary ">Explanation of terms: </a> 
+
+</p>
+						</div>
+                    <div class="grid_3 wow fadeInRight" data-wow-delay="0.4s">
+                        <h4 class="primary-color">RopEmotion- Workshop 1                             </h4>
+
+                        <p class="perf ">Les Rope - More Emotion
+We use ropes.
+We fx our partner.
+We create beautiful captivations.
+We tie up our partner…
+However, is this really everything
+what bondage puts out? – NO!
+Freely after the motto “less is
+more” will we start with this
+workshop, to get deeper in
+the connection between the
+partners.</br>
+It is not about how fast you can
+do a TK, It is not about how neat
+your jewellerybondage is. It is
+about communication, erotic,
+trust and psychology! Since,
+bondage CAN be more intimate
+than sexual intercourse.In practical exercises will we
+take a look in how we… -
+take contact to our partners
+and explore their bodies- , -
+create emotional and mental
+connections- , use the bodies
+and movement to experience
+an unforgettable time.</br>
+Further we will give you
+practical tips and tricks for
+smoothly tying, rope-handling
+and well-being in ropes.
+The workshop is laid out on
+four hours.
+</div>
+                    <div class="grid_3 wow fadeInRight " data-wow-delay="0.6s">
+                        <h4 class="primary-color">RopEmotion- Workshop 2 </h4>
+
+                        <p class="perf ">Behind Technique </br> Information comming soon</p>
+                </div>
+				    <div class="grid_3 wow fadeInRight " data-wow-delay="0.8s">
+                        <h4 class="primary-color">Ren Yagami  </h4>
+                        <p class="perf">
+						</p>
+</div>
+
+
+            </div>
+                <h2 class="wow fadeIn stalinist" data-wow-duration="1s">tuition</h2>
+		</section>
+		<section class="well  bg-primary">
+		<div class="container"><a name="tickets"></a>
+
+<p class="blur2">If you going to attend MoscowKnot you have to book the tickests. You may do it via email to <a href"mailto:moscowknot@gmail.com">moscowknot@gmail.com</a> or any suitable messenger - Facebook, Fetlife etc To Vlada
+
+You will able to byu your tickets at the entrance by presale price.</p>
+
+        <h2 class="wow fadeIn stalinist" data-wow-duration="0.4s">Билеты</h2>
+
+	   </div>
+		</section>
+		
+		
           <section class="well">
             <div class="container">
-                <h3 class="secondary-color">Past moscowknots:</h3>
+                <h3 class="secondary-color">Past Moscowknot:</h3>
 
                 <div class="row">
                     <div class="grid_4">
-                        <article class="wow fadeInLeft" data-wow-duration="1s"><img src="images/page-1_img03.jpg" alt=""/>
+                        <article class="wow fadeInLeft" data-wow-duration="1s"><img src="images/knot13.jpg" alt=""/>
 
                             <h2>13</h2>
                             <h6 class="secondary-color">Moscowknot 2013</h6>
 
                             <p>WykD Dave * Xanoo *Naka Akira *Shin * Riccardo  Wildties * Mosafir* Caroline * Tetsubishi *Medved*Yeger*Zenj* Stefano * Exmelin* Jack the Whipper* Incognito *
 Tougo Vlada  </p>
-                            <a class="btn" href="#">/OPEN VIDEO</a>
+                            <a class="js-modal-btn  btn" href="#" data-video-id="259357789">/Клип</a>
                         </article>
                     </div>
                     <div class="grid_4">
-                        <article class="wow fadeIn" data-wow-duration="2s"><img src="images/page-1_img04.jpg" alt=""/>
+                        <article class="wow fadeIn" data-wow-duration="2s"><img src="images/knot14.jpg" alt=""/>
 
                             <h2>14</h2>
                             <h6 class="secondary-color">Moscowknot 2014</h6>
@@ -154,14 +501,14 @@ Lisitsin *
 Vlada * 
 Heretik 
 Time Table</p>
-                            <a class="btn" href="#">/OPEN VIDEO</a>
+                            <a class="js-modal-btn  btn" href="#" data-video-id="259376992">/Клип</a>
                         </article>
                     </div>
                     
 					<div class="grid_4">
 				
 					
-                        <article class="wow fadeInRight " data-wow-duration="1s"><img src="images/page-1_img05.jpg" alt=""/>
+                        <article class="wow fadeInRight " data-wow-duration="1s"><img src="images/knot15.jpg" alt=""/>
 
                             <h2>15</h2>
                             <h6 class="secondary-color">Moscowknot 2015</h6>
@@ -182,13 +529,13 @@ Kalahari *
 Medved *
  Lisitsin *
 Psiheya * </p>
-                            <a class="btn" href="#">/OPEN VIDEO </a>
+                            <a class="js-modal-btn  btn" href="#" data-video-id="149007801">/ КЛИП </a>
                         </article>
                     </div>
 					<div class="grid_4">
 				
 					
-                        <article class="wow fadeInRight " data-wow-duration="1s"><img src="images/page-1_img05.jpg" alt=""/>
+                        <article class="wow fadeInRight " data-wow-duration="1s"><img src="images/knot16.jpg" alt=""/>
 
                             <h2>16</h2>
                             <h6 class="secondary-color">Moscowknot 2016</h6>
@@ -209,11 +556,12 @@ Medved*
 Sergey Libido*
 Vlada & Falco*
 </p>
-                            <a class="btn" href="#">/OPEN VIDEO </a>
+                            <a class="js-modal-btn btn" href="#" data-video-id="198670422" >/ КЛИП 1 </a>
+                            <a class="js-modal-btn btn" href="#" data-video-id="194251944" >/ КЛИП 2 </a>
                         </article>
                     </div>
 					<div class="grid_4">
-                        <article class="wow fadeInRight " data-wow-duration="1s"><img src="images/page-1_img05.jpg" alt=""/>
+                        <article class="wow fadeInRight " data-wow-duration="1s"><img src="images/knot17.jpg" alt=""/>
 
                             <h2>17</h2>
                             <h6 class="secondary-color">Moscowknot 2017</h6>
@@ -234,12 +582,13 @@ Medved*
 Sergey Libido*
 Vlada & Falco*
 </p>
-                            <a class="btn" href="#">/OPEN VIDEO </a>
+                            <a class="js-modal-btn btn" data-video-id="244535288" href="#">/ КЛИП</a>
                         </article>
                     </div>
 				</div>
             </div>
         </section>
+
     </main>
 
     <!--========================================================
@@ -254,13 +603,13 @@ Vlada & Falco*
                     <!-- {%FOOTER_LINK} -->
                 </div>
                 <div class="grid_3">
-                    <p>Call us:</p>
-                    <a href="callto:x">+79167541017</a>
+                    <p>Звоните:</p>
+                    <a href="callto:x">(916)754 1017</a>
                 </div>
                 <div class="grid_3">
-                    <address>Moscow Samokatnaya 4s9
+                    <address>Moscow. Samokatnaya 4 s 11
                     </address>
-                    Email: <a href="mailto:x">msocowknot@gmail.com</a>
+                    Email: <a href="mailto:moscowknot@gmail.com">moscowknot@gmail.com</a>
                 </div>
                 <div class="grid_3">
                     <ul class="inline-list">
@@ -272,18 +621,40 @@ Vlada & Falco*
             </div>
 
         </div>
-        <div class="map1">
-            <div id="google-map" class="map_model"1></div>
+        <div class="map"><a name='map'></a>
+            <div id="google-map" class="map_model"></div>
             <ul class="map_locations">
-                <li data-x="-73.9874068" data-y="40.643180">
-                    <p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
+                <li data-x="55.75716000000001" data-y="37.67581199999995">
+                    <p> Moscow. Samokatnaya 4s11 <span>(916)754 1017</span></p>
                 </li>
             </ul>
         </div>
     </footer>
 </div>
+<script>
+function myMap() {
+  var myLatLng = {lat: 55.75716000000001, lng: 37.675812};
+   var map = new google.maps.Map(document.getElementById('google-map'), {
+    zoom: 17,
+    center: myLatLng
+  });
 
-<script src="js/script.js"></script>
-<!--coded by united-->
+var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'MONACLUB'
+  });
+marker.setMap(map);
+
+ 
+
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPZr4mCU0Zu6duYsr0N7GbmkEjO13S4eM&callback=myMap&style=element:geometry%7Ccolor:0x1d2c4d&style=element:labels.text.fill%7Ccolor:0x8ec3b9&style=element:labels.text.stroke%7Ccolor:0x1a3646&style=feature:administrative.country%7Celement:geometry.stroke%7Ccolor:0x4b6878&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0x64779e&style=feature:administrative.province%7Celement:geometry.stroke%7Ccolor:0x4b6878&style=feature:landscape.man_made%7Celement:geometry.stroke%7Ccolor:0x334e87&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0x023e58&style=feature:poi%7Celement:geometry%7Ccolor:0x283d6a&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x6f9ba5&style=feature:poi%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0x023e58&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x3C7680&style=feature:road%7Celement:geometry%7Ccolor:0x304a7d&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x98a5be&style=feature:road%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:road.highway%7Celement:geometry%7Ccolor:0x2c6675&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x255763&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0xb0d5ce&style=feature:road.highway%7Celement:labels.text.stroke%7Ccolor:0x023e58&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x98a5be&style=feature:transit%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:transit.line%7Celement:geometry.fill%7Ccolor:0x283d6a&style=feature:transit.station%7Celement:geometry%7Ccolor:0x3a4762&style=feature:water%7Celement:geometry%7Ccolor:0x0e1626&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x4e6d70"></script>
+
+
+<script src="js/script3.js"></script>
+<!--coded by united--  AIzaSyCPZr4mCU0Zu6duYsr0N7GbmkEjO13S4eM  55.75716000000001,37.675812>
 </body>
 </html>
