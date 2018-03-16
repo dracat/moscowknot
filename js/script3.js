@@ -68,24 +68,27 @@ new ModalVideo('.js-modal-btn', {channel: 'vimeo'});
 /* Photoswipe
  ========================================================*/
 ;
-var openPhotoSwipe = function() {
+var openPhotoSwipe = function( name) {
   var pswpElement = document.querySelectorAll('.pswp')[0];
-
+    if (name === undefined) {
+          name = 'Eger';
+    } 
+	
 // build items array
 var items = [
     {
-        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/Justin/01.jpg',
+        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/01.jpg',
         w: 1000,
         h: 1000
     },
     {
-        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/Justin/02.jpg',
+        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/02.jpg',
         w: 1000,
         h: 1000
     }
 	,
     {
-        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/Justin/03.jpg',
+        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/03.jpg',
         w: 1000,
         h: 1000
     }
@@ -107,9 +110,10 @@ gallery.init();
 
 
 
-
-document.getElementById('photosw').onclick = openPhotoSwipe;
-
+var but =document.getElementByClass('photosw');
+but.foreach function(item, i, but) {
+item.onclick = openPhotoSwipe(item.name);
+}
 
 /* SMOOTH SCROLLIG
  ========================================================*/
