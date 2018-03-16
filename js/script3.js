@@ -111,9 +111,9 @@ gallery.init();
 
 
 var but =document.getElementByClass('photosw');
-but.foreach function(item, i, but) {
+but.foreach(function(item, i, but) {
 item.onclick = openPhotoSwipe(item.name);
-}
+});
 
 /* SMOOTH SCROLLIG
  ========================================================*/
