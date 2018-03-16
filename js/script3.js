@@ -74,14 +74,14 @@ var openPhotoSwipe = function() {
 // build items array
 var items = [
     {
-        src: 'https://res.cloudinary.com/moscowknot/image/upload/2018p/Justin/01.jpg',
-        w: 1200,
-        h: 400
+        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/Justin/01.jpg',
+        w: 1000,
+        h: 1000
     },
     {
-        src: 'https://res.cloudinary.com/moscowknot/image/upload/2018p/Justin/01.jpg',
-        w: 1200,
-        h: 900
+        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/Justin/02.jpg',
+        w: 1000,
+        h: 1000
     }
 ];
 
