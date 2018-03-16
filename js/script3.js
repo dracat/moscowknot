@@ -110,7 +110,7 @@ gallery.init();
 
 
 
-var but =document.getElementByClass('photosw');
+var but =document.getElementByClassName('photosw');
 but.foreach(function(item, i, but) {
 item.onclick = openPhotoSwipe(item.name);
 });
