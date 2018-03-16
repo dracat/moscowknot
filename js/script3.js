@@ -83,6 +83,12 @@ var items = [
         w: 1000,
         h: 1000
     }
+	,
+    {
+        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/Justin/03.jpg',
+        w: 1000,
+        h: 1000
+    }
 ];
 
 // define options (if needed)
