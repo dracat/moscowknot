@@ -108,12 +108,13 @@ gallery.init();
 };
 
 
+(function ($) {
+	$('.photosw').on('click', function(){ 
+	openPhotoSwipe($(this).data('name'));
+	
+	})
+})(jQuery);
 
-
-var but =document.getElementsByClassName('photosw');
-but.foreach(function(item, i, but) {
-item.onclick = openPhotoSwipe(item.name);
-});
 
 /* SMOOTH SCROLLIG
  ========================================================*/
