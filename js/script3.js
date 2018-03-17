@@ -68,25 +68,35 @@ new ModalVideo('.js-modal-btn', {channel: 'vimeo'});
 /* Photoswipe
  ========================================================*/
 ;
+
+function  getData() {
+
+  
+}
+
 var openPhotoSwipe = function( name) {
   var pswpElement = document.querySelectorAll('.pswp')[0];
     if (name === undefined) {
           name = 'Eger';
     } 
-	
-// build items array
-var items = [];
-for (var i=1;i<10;i++){
-	var fi = ("0" + i).slice(-2);
-	items.push({
-	       src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/'+fi+'.jpg',
-        w: 1000,
-        h: 1000
-	
-	});
-};
 
-//  console.log(items);
+	
+   $.getJSON('https://res.cloudinary.com/moscowknot/image/list/'+name+'18p.json', function( data ) {
+
+  var items = [];
+  $.each( data.resources, function( i, it ) {
+
+    items.push( {
+	    src: 'https://res.cloudinary.com/moscowknot/image/upload/" + it.public_id + ".jpg,
+        w: it.width,
+        h: it.height
+	});
+  });
+
+});	
+// build items array
+
+  console.log(items);
 
 
 // define options (if needed)
