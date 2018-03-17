@@ -75,24 +75,19 @@ var openPhotoSwipe = function( name) {
     } 
 	
 // build items array
-var items = [
-    {
-        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/01.jpg',
+var items = [];
+for (var i=0;i<10;i++){
+	var fi = ("0" + i).slice(-2);
+	items.push {
+	       src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/'+fi+'.jpg',
         w: 1000,
         h: 1000
-    },
-    {
-        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/02.jpg',
-        w: 1000,
-        h: 1000
-    }
-	,
-    {
-        src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/03.jpg',
-        w: 1000,
-        h: 1000
-    }
-];
+	
+	}
+};
+
+  console.log(items);
+
 
 // define options (if needed)
 var options = {
@@ -109,11 +104,21 @@ gallery.init();
 
 
 (function ($) {
+	$('data-name').on('click', function(){ 
+	openPhotoSwipe($(this).data('name'));
+	
+	})
+})(jQuery);
+
+/*
+(function ($) {
 	$('.photosw').on('click', function(){ 
 	openPhotoSwipe($(this).data('name'));
 	
 	})
 })(jQuery);
+
+*/
 
 
 /* SMOOTH SCROLLIG
