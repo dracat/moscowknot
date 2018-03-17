@@ -80,10 +80,11 @@ var openPhotoSwipe = function( name) {
           name = 'Eger';
     } 
 
-	
+ var items = [];	
    $.getJSON('https://res.cloudinary.com/moscowknot/image/list/'+name+'18p.json', function( data ) {
-
-  var items = [];
+	  console.log("get"+name); 
+   }
+   .done(function(data) {
   $.each( data.resources, function( i, it ) {
 
     items.push( {
@@ -91,7 +92,14 @@ var openPhotoSwipe = function( name) {
         w: it.width,
         h: it.height
 	});
-  });
+  });	   
+   })
+   .fail(function(){
+	   console.log("nope"+name); 
+   })
+
+ 
+
 
 });	
 // build items array
