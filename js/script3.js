@@ -92,15 +92,7 @@ var openPhotoSwipe = function( name) {
         w: it.width,
         h: it.height
 	  });
-     });	   
-   })
-   .fail(function(){
-	   console.log("nope"+name); 
-   });
-
- 
-
-
+     });
 
 // build items array
 
@@ -117,6 +109,12 @@ var options = {
 // Initializes and opens PhotoSwipe
 var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 gallery.init();
+
+	 
+   }) //done
+   .fail(function(){
+	   console.log("nope"+name); 
+   });
 
 };
 
