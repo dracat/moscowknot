@@ -83,25 +83,25 @@ var openPhotoSwipe = function( name) {
  var items = [];	
    $.getJSON('https://res.cloudinary.com/moscowknot/image/list/'+name+'18p.json', function( data ) {
 	  console.log("get"+name); 
-   }
+   })
    .done(function(data) {
-  $.each( data.resources, function( i, it ) {
+     $.each( data.resources, function( i, it ) {
 
-    items.push( {
+     items.push( {
 	    src: 'https://res.cloudinary.com/moscowknot/image/upload/' + it.public_id + '.jpg',
         w: it.width,
         h: it.height
-	});
-  });	   
+	  });
+     });	   
    })
    .fail(function(){
 	   console.log("nope"+name); 
-   })
+   });
 
  
 
 
-});	
+
 // build items array
 
   console.log(items);
