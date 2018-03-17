@@ -104,7 +104,7 @@ gallery.init();
 
 
 (function ($) {
-	$('data-name').on('click', function(){ 
+	$('[data-name]').on('click', function(){ 
 	openPhotoSwipe($(this).data('name'));
 	
 	})
