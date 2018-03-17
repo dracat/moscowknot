@@ -86,7 +86,7 @@ for (var i=1;i<10;i++){
 	});
 };
 
-  console.log(items);
+//  console.log(items);
 
 
 // define options (if needed)
@@ -104,8 +104,9 @@ gallery.init();
 
 
 (function ($) {
-	$('[data-name]').on('click', function(){ 
+	$('[data-name]').on('click', function(e){ 
 	openPhotoSwipe($(this).data('name'));
+	e.preventDefault();
 	
 	})
 })(jQuery);
