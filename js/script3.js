@@ -76,7 +76,7 @@ var openPhotoSwipe = function( name) {
 	
 // build items array
 var items = [];
-for (var i=0;i<10;i++){
+for (var i=1;i<10;i++){
 	var fi = ("0" + i).slice(-2);
 	items.push({
 	       src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_fill/2018p/'+name+'/'+fi+'.jpg',
