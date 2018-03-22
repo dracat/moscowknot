@@ -373,12 +373,12 @@ main {
   padding-top: 90px; }
 
 /*========================================================
-                     FOOTER  Styles
+   color: #d2d2d2;                     FOOTER  Styles
 =========================================================*/
 footer {
   padding-top: 95px;
   background: #fff;
-  color: #d2d2d2; 
+
   color: #753f3f;}
   footer h4 {
     font-weight: 900;
