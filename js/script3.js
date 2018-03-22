@@ -88,7 +88,7 @@ var openPhotoSwipe = function( name) {
      $.each( data.resources, function( i, it ) {
 
      items.push( {
-	    src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_limit/' + it.public_id + '.jpg',
+	    src: 'https://res.cloudinary.com/moscowknot/image/upload/w_1000,h_1000,c_limit,f_auto/v'+it.version+'/' + it.public_id + '.jpg',
         w: it.width,
         h: it.height
 	  });
