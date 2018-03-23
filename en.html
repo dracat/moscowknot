@@ -796,6 +796,16 @@ Vlada & Falco*
     </footer>
 </div>
 <script>
+(function ($) {
+	$('.perf').readmore(
+	{
+		blockCSS: 'display: inline-block;' , 
+		moreLink: '<a class="rred" href="#">Read more</a>',
+		collapsedHeight: 100
+		});
+})(jQuery);
+
+
 function myMap() {
   var myLatLng = {lat: 55.75716000000001, lng: 37.675812};
    var map = new google.maps.Map(document.getElementById('google-map'), {
