@@ -56,12 +56,12 @@ include('js/jquery.easing.1.3.js');
     }
 new ModalVideo('.js-modal-btn', {channel: 'vimeo'});	
 
-	$('.perf').readmore(
+/*	$('.perf').readmore(
 	{
 		blockCSS: 'display: inline-block;' , 
 		moreLink: '<a href="#">VVVV more</a>',
 		collapsedHeight: 100
-		});
+		});*/
 })(jQuery);
 
 
